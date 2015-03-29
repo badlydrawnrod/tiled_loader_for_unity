@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="16" height="13" tilewidth="16" tileheight="16" backgroundcolor="#3f3f3f" nextobjectid="7">
+ <tileset firstgid="1" name="Platform Tileset" tilewidth="16" tileheight="16">
+  <image source="platform_tileset.png" width="32" height="16"/>
+  <terraintypes>
+   <terrain name="New Terrain" tile="-1"/>
+  </terraintypes>
+  <tile id="0">
+   <properties>
+    <property name="type" value="block"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="one_way" value="true"/>
+    <property name="type" value="block"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="5" name="Mobile Tileset" tilewidth="16" tileheight="16">
+  <image source="mobile_tileset.png" width="48" height="16"/>
+  <tile id="0">
+   <properties>
+    <property name="type" value="player 1"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="type" value="player 2"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="type" value="walker"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Platforms" width="16" height="13">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,2,2,2,2,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,2,2,2,2,0,0,2,2,2,2,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup name="Mobiles">
+  <object id="1" type="player 1" gid="5" x="16" y="192"/>
+  <object id="2" type="player 2" gid="6" x="224" y="192"/>
+  <object id="3" type="walker" gid="7" x="96" y="144"/>
+  <object id="4" type="walker" gid="7" x="128" y="48"/>
+  <object id="5" type="walker" gid="7" x="208" y="96"/>
+  <object id="6" type="walker" gid="7" x="32" y="96"/>
+ </objectgroup>
+</map>
