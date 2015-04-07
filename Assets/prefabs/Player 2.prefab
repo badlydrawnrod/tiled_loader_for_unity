@@ -72,6 +72,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalSpeed: 140
   jumpSpeed: 280
+  leftKey: 276
+  rightKey: 275
+  jumpKey: 273
 --- !u!212 &21252878
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -103,7 +103,7 @@ public class LevelLoader : MonoBehaviour
                 collider.usedByEffector = true;
                 PlatformEffector2D effector = tile.AddComponent<PlatformEffector2D>();
                 string oneWay = tiledTile.GetPropertyByName("one_way");
-                effector.oneWay = (oneWay != null && oneWay == "true");
+                effector.useOneWay = (oneWay != null && oneWay == "true");
             }
         }
         return tile;
